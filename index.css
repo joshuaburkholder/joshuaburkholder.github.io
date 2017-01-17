@@ -1,0 +1,173 @@
+body {
+   margin: 5px;
+   padding: 10px 5px 0px 5px;
+   background: #FFFAF0;
+}
+
+.css-selector {
+font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+a {
+  text-decoration:none;
+}
+
+ul {
+      display: inline;
+      text-align: center;
+}
+
+li {
+  float: left;
+  padding: 5px;
+  align-items: center;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+}
+
+.searchForCat {
+  float: center;
+  width: 100%
+  border: 3px solid black;
+  padding: 3px;
+  height: 18px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchButton {
+  position: relative;
+  right: 0px;
+  width: 40px;
+  height: 36px;
+  border: 2px solid #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  border-color: #000;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.footer {
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+
+#specialMessage {
+  text-align: right;
+  font-size: 11px;
+  color:  red;
+}
+
+#header {
+  position:relative;
+  width: 90%;
+  margin:0
+  }
+
+#navcontainer {
+  width:  100%;
+  max-height: 100%;
+  background-color: lightgray;
+  padding: 5px 15px 5px -15px ;
+}
+
+#innerTable {
+  display: table;
+  width: 99%;
+  text-align: center;
+  padding:  3px;
+  font-weight: light;
+  font-style: italic;
+}
+
+#innerTable li {
+  list-style-type: none;
+  font-size: 11px;
+  align-content: center;
+}
+
+#row {
+    display: table-row;
+  }
+
+  #left, #right, #middle {
+    display: table-cell;
+    align-content: bottom;
+    max-height: 30vh;
+    min-height: 15vh;
+    }
+
+#left {
+  float: left;
+  width: 25vw;
+  text-align: center;
+  margin-left: 5px;
+  padding-top: 25px;
+}
+
+
+#middle {
+  width: 50vw;
+  vertical-align: middle;
+}
+
+#right {
+  float: right;
+  width: 25vw;
+  padding-top: 25px;
+}
+
+.box {
+  display: inline-flex;
+  margin: 8px 8px 8px 8px;
+  background-color: red;
+  color:aliceblue;
+}
+
+.boxInner img {
+   width: 100%;
+}
+
+
+.footer {
+  background-color: lightgrey;
+}
+
+#socialLink {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
