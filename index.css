@@ -1,7 +1,7 @@
 body {
    margin: 5px;
    padding: 10px 5px 0px 5px;
-   background: #FFFAF0;
+   background: #FFFFFF;
 }
 
 .css-selector {
@@ -36,7 +36,7 @@ li {
   height: 18px;
   border-radius: 5px;
   outline: none;
-  color: #9DBFAF;
+  color: #0094F5;
 }
 
 .searchButton {
@@ -46,13 +46,16 @@ li {
   height: 36px;
   border: 2px solid #00B4CC;
   text-align: center;
-  color: #fff;
+  color: #000;
   border-radius: 5px;
   border-color: #000;
   cursor: pointer;
   font-size: 15px;
 }
 
+.titleBox {
+  text-align: center;
+}
 .footer {
   position: absolute;
   display: block;
@@ -61,8 +64,10 @@ li {
 
 #specialMessage {
   text-align: right;
+  background-color: #FEE030;
   font-size: 11px;
-  color:  red;
+  color:  #0094F5;
+  font-weight: bold;
 }
 
 #header {
@@ -74,7 +79,7 @@ li {
 #navcontainer {
   width:  100%;
   max-height: 100%;
-  background-color: lightgray;
+  background-color: #0094F5;
   padding: 5px 15px 5px -15px ;
 }
 
@@ -83,7 +88,7 @@ li {
   width: 99%;
   text-align: center;
   padding:  3px;
-  font-weight: light;
+  font-weight: bolder;
   font-style: italic;
 }
 
@@ -106,7 +111,7 @@ li {
 
 #left {
   float: left;
-  width: 25vw;
+  width: 28vw;
   text-align: center;
   margin-left: 5px;
   padding-top: 25px;
@@ -114,20 +119,27 @@ li {
 
 
 #middle {
-  width: 50vw;
+  max-width: 40vw;
+  height: auto;
   vertical-align: middle;
+  overflow: hidden;
+}
+
+#logo {
+  max-height: 100px;
+  width: auto;
 }
 
 #right {
   float: right;
-  width: 25vw;
+  width: 28vw;
   padding-top: 25px;
 }
 
 .box {
   display: inline-flex;
   margin: 8px 8px 8px 8px;
-  background-color: red;
+  background-color: #0094F5;
   color:aliceblue;
 }
 
@@ -137,7 +149,7 @@ li {
 
 
 .footer {
-  background-color: lightgrey;
+  background-color: #D3D3D3;
 }
 
 #socialLink {
@@ -145,29 +157,4 @@ li {
   height: 50px;
   width: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
