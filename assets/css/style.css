@@ -92,6 +92,10 @@ button:focus {
   color: #fff;
 }
 
+#leadimage {
+  opacity: 5;
+}
+
 h1,
 h2,
 h3,
