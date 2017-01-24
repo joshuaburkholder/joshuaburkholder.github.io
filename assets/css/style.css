@@ -1061,6 +1061,14 @@ Portfolio styles
   width: 100%;
 }
 
+#phototextw {
+  background: rgba(255,255,255,0.5);
+}
+
+#phototext {
+  background:rgba(0,0,0,0.5);
+}
+
 /*
 Blog styles
 */

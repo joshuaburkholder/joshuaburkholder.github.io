@@ -43,7 +43,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button><hr>
-                        <h2><span class="text-color">J</span>oshua<span class="text-color">B</span>urkholder</h2>
+                        <h2><span class="text-color"> J</span>oshua <span class="text-color">B</span>urkholder </h2>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav scroll-to">
@@ -66,15 +66,15 @@
                 </div><!--/.container -->
             </nav>
             <div class="hidden-xs">
-<!--                 <ul class="list-inline text-center top-socials">
-                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
-                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                    <li><a href="#"><i class="ion-social-instagram"></i></a></li> -->
+                <ul class="list-inline text-center top-socials">
+<!--                     <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+ -->                    <li><a href="https://twitter.com/josh_burkholder"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/joshua-burkholder-36948a39"><i class="ion-social-linkedin"></i></a></li>
+<!--                     <li><a href="#"><i class="ion-social-googleplus"></i></a></li> -->
+                    <li><a href="https://www.instagram.com/jburkholder31/"><i class="ion-social-instagram"></i></a></li>
                 </ul><!--social icons list-->
-                <p><a href="#"><i class="ion-ios-telephone"></i> +01 555-5554</a></p>
-                <p><a href="#"><i class="ion-ios-email"></i> support@xone.com</a></p>
+<!--                 <p><a href="#"><i class="ion-ios-telephone"></i> +01 555-5554</a></p> -->
+                <p><a href="mailto:joshburkholder31@gmail.com?Subject=Website%20Inquiry" target="_blank"><i class="ion-ios-email"></i> email me</a></p>
             </div>
             <!--end navigation-->
         </aside><!--end left navigation menu-->
@@ -90,7 +90,7 @@
                                 <div class="container text-center">
                                     <div class="flexslider">
                                         <ul class="slides">
-                                            <li><h1>Joshua Burkholder</h1><h2><span class="text-color">Full Stack JavaScript Developer</h2></span></li>
+                                            <li><h1 id="phototext">Joshua Burkholder</h1><h2 id="phototext"><span class="text-color">Full Stack JavaScript Developer</h2></span></li>
 <!--                                             <li><h1>Full Stack <span class="text-color">JavaScript</span></h1> <p>Coding for a Better World</p></li>
                                              <li><h1>digital <span class="text-color">agency</span> </h1><p>This text easy to change</p></li>
 -->                                        </ul><!--slides-->
@@ -206,7 +206,7 @@
                 <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(assets/images/cairn_lg.jpg)">
                 </div>
                 <div class=" parallax-text text-center center-it">
-                    <h2>" A Super Simple Minimal One Page for Creative & Small Agencies "</h2>
+                    <h2 id="phototext">" A Super Simple Minimal One Page for Creative & Small Agencies "</h2>
                 </div>
             </div>
             <!-- End Parallax -->
@@ -390,25 +390,31 @@
                     <div class="testi-slider">
                         <ul class="slides">
                             <li>
+                                <div id="phototext">
                                 <i class="ion-quote"></i>
-                                <p>
-                                    " Great work done. Very clean design and super easy code help me to launch my site quickly. "
+                                <p>" Great work done. Very clean design and super easy code help me to launch my site quickly. "
                                 </p>
                                 <h5>John Doe</h5>
+                                H
+                                </div>
                             </li><!--li-->
                             <li>
+                                <div id="phototext">
                                 <i class="ion-quote"></i>
                                 <p>
                                     " A super clean full pack one page theme. great work. "
                                 </p>
                                 <h5>Emily</h5>
+                                </div>
                             </li><!--li-->
                             <li>
+                                <div id="phototext">
                                 <i class="ion-quote"></i>
                                 <p>
                                     " It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
                                 </p>
                                 <h5>Alex</h5>
+                                </div>
                             </li><!--li-->
                         </ul>
                     </div>
@@ -505,86 +511,92 @@
                         <p class="text-center margin-b-20">Present your work in beautiful way </p>
                     </div>
                 </div><!--work header-->
+
                 <!--filter start-->
                 <div class="container">  
                     <div id="js-filters-awesome-work" class="cbp-l-filters-work">
                         <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
                             SHOW ALL
                         </div>
-                        <div data-filter=".identity" class="cbp-filter-item">
-                            IDENTITY <div class="cbp-filter-counter"></div>
+                        <div data-filter=".code" class="cbp-filter-item">
+                            CODE <div class="cbp-filter-counter"></div>
                         </div>
                         <div data-filter=".web-design" class="cbp-filter-item">
                             WEB DESIGN <div class="cbp-filter-counter"></div>
                         </div>
-                        <div data-filter=".graphic" class="cbp-filter-item">
-                            GRAPHIC <div class="cbp-filter-counter"></div>
+                        <div data-filter=".ajaxapp" class="cbp-filter-item">
+                            AJAX APP <div class="cbp-filter-counter"></div>
                         </div>
                         <div data-filter=".logos" class="cbp-filter-item">
-                            LOGO <div class="cbp-filter-counter"></div>
+                            LOGOS <div class="cbp-filter-counter"></div>
                         </div>
                     </div><!--filter nav end-->
 
                     <div id="js-grid-awesome-work" class="cbp cbp-l-grid-work">
-                        <div class="cbp-item identity">
-                            <a href="assets/ajax-awesome-work/project1.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+                        <div class="cbp-item code">
+                            <a href="https://github.com/joshuaburkholder/JSLibrary" class="cbp-caption" rel="nofollow">
                                 <div class="cbp-caption-defaultWrap">
-                                    <img src="assets/images/w1.jpg" alt="">
+                                    <img src="assets/images/jsl_image.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap"></div>
                             </a>
-                            <a href="assets/ajax-awesome-work/project1.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Project Title</a>
-                            <div class="cbp-l-grid-work-desc">Web Design / Graphic</div>
+                            <a href="https://github.com/joshuaburkholder/JSLibrary" class="cbp-l-grid-work-title" rel="nofollow">JavaScript Library</a>
+                            <div class="cbp-l-grid-work-desc">Code / Web Design </div>
                         </div><!--work item-->
-                        <div class="cbp-item web-design logos">
-                            <a href="assets/ajax-awesome-work/project2.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+
+                        <div class="cbp-item ajaxapp web-design">
+                            <a href="http://tablefun.herokuapp.com/" class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
-                                    <img src="assets/images/w2.jpg" alt="">
+                                    <img src="assets/images/tablefun_link.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap"></div>
                             </a>
-                            <a href="assets/ajax-awesome-work/project2.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Project Title</a>
-                            <div class="cbp-l-grid-work-desc">Logo / Web Design</div>
+                            <a href="http://http://tablefun.herokuapp.com" class="cbp-l-grid-work-title" rel="nofollow">Table Fun</a>
+                            <div class="cbp-l-grid-work-desc">Ajax App / Web Design</div>
                         </div><!--work item-->
-                        <div class="cbp-item graphic logos">
-                            <a href="assets/ajax-awesome-work/project3.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+
+                        <div class="cbp-item ajaxapp logos">
+                            <a href="assets/ajax-awesome-work/project3.html" class="cbp-caption" rel="nofollow">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="assets/images/w3.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap"></div>
                             </a>
-                            <a href="assets/ajax-awesome-work/project3.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Project Title</a>
-                            <div class="cbp-l-grid-work-desc">Graphic / Logo</div>
+                            <a href="assets/ajax-awesome-work/project3.html" class="cbp-l-grid-work-title" rel="nofollow">Project Title</a>
+                            <div class="cbp-l-grid-work-desc">Ajax App / Logo</div>
                         </div><!--work item-->
-                        <div class="cbp-item web-design graphic">
-                            <a href="assets/ajax-awesome-work/project4.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+
+                        <div class="cbp-item web-design ajaxapp">
+                            <a href="assets/ajax-awesome-work/project4.html" class="cbp-caption" rel="nofollow">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="assets/images/w4.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap"></div>
                             </a>
-                            <a href="assets/ajax-awesome-work/project4.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Project Title</a>
-                            <div class="cbp-l-grid-work-desc">Web Design / Graphic</div>
+                            <a href="assets/ajax-awesome-work/project4.html" class="cbp-l-grid-work-title" rel="nofollow">Project Title</a>
+                            <div class="cbp-l-grid-work-desc">Web Design / Ajax App</div>
                         </div><!--work item-->
-                        <div class="cbp-item identity web-design">
-                            <a href="assets/ajax-awesome-work/project5.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+
+                        <div class="cbp-item code web-design">
+                            <a href="assets/ajax-awesome-work/project5.html" class="cbp-caption" rel="nofollow">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="assets/images/w5.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap"></div>
                             </a>
-                            <a href="assets/ajax-awesome-work/project5.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Project Title</a>
-                            <div class="cbp-l-grid-work-desc">Web Design / Identity</div>
+                            <a href="assets/ajax-awesome-work/project5.html" class="cbp-l-grid-work-title" rel="nofollow">Project Title</a>
+                            <div class="cbp-l-grid-work-desc">Web Design / Code</div>
                         </div><!--work item-->
-                        <div class="cbp-item identity web-design">
-                            <a href="assets/ajax-awesome-work/project6.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+
+                        <div class="cbp-item code web-design">
+                            <a href="assets/ajax-awesome-work/project6.html" class="cbp-caption" rel="nofollow">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="assets/images/w6.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap"></div>
                             </a>
-                            <a href="assets/ajax-awesome-work/project6.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Project Title</a>
-                            <div class="cbp-l-grid-work-desc">Identity / Web Design</div>
+                            <a href="assets/ajax-awesome-work/project6.html" class="cbp-l-grid-work-title" rel="nofollow">Project Title</a>
+                            <div class="cbp-l-grid-work-desc">Code / Web Design</div>
                         </div><!--work item-->
                     </div><!--grid end-->
 
@@ -680,19 +692,19 @@
                         <div class="col-sm-5 col-sm-offset-1 scrollReveal sr-right sr-delay-1">
                             <div class="contact-details">
                             <h4>Address</h4>
-                            <p>Lorem Ipsum Street, <br> Park Ave.<br>(245) 485-493</p>
+                            <p>1410 Terrace Ave, <br> Indianpaolis, Indiana 46203<br>(206) 409-2300</p>
                             <div class="space-20"></div>
                             <h4>Mail Us</h4>
-                            <p class="lead"><a href="#">hello@xone.com</a></p>
+                            <p class="lead"><a href="mailto:joshburkholder31@gmail.com?Subject=Website%20Inquiry" target="_blank">joshburkholder31@gmail.com</a></p>
                             <div class="space-20"></div>
-                             <h4>Follow Us</h4>
+                             <h4>Follow Me</h4>
                              <div class="space-10"></div>
                             <ul class="list-inline">
-                                <li><a href="#"><i class="ion-social-facebook-outline"></i></a></li>
-                                <li><a href="#"><i class="ion-social-twitter-outline"></i></a></li>
-                                <li><a href="#"><i class="ion-social-googleplus-outline"></i></a></li>
-                                <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
-                                <li><a href="#"><i class="ion-social-linkedin-outline"></i></a></li>
+<!--                                 <li><a href="#"><i class="ion-social-facebook-outline"></i></a></li> -->
+                                <li><a href="https://twitter.com/josh_burkholder"><i class="ion-social-twitter-outline"></i></a></li>
+<!--                                 <li><a href="#"><i class="ion-social-googleplus-outline"></i></a></li> -->
+                                <li><a href="https://www.instagram.com/jburkholder31/"><i class="ion-social-instagram-outline"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/joshua-burkholder-36948a39"><i class="ion-social-linkedin-outline"></i></a></li>
                             </ul>
                         </div><!--contact detail-->
                         </div><!--contact detail col end-->
@@ -714,15 +726,15 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-5 margin-b-30">
-                            <span>&copy; Copyright 2016. Amaze by Design_mylife</span>
+<!--                             <span>&copy; Copyright 2016. Amaze by Design_mylife</span> -->
                         </div><!--copyright col-->
                         <div class="col-sm-7 text-right">
-                            <ul class="list-inline margin-b-30">
+<!--                             <ul class="list-inline margin-b-30">
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
+                                <li><a href="#">Portfolio</a></li>
                                 <li><a href="#">News</a></li>
                                 <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Terms & Conditions</a></li> -->
                             </ul>
                         </div><!--footer nav col-->
                     </div><!--row-->
@@ -734,7 +746,7 @@
 
 
 
-        <!--modal of video-->
+<!--modal of video
         <div class="modal video-modal fade" id="video-popup" tabindex="-1" role="dialog" aria-labelledby="video-popup">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -745,11 +757,11 @@
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe id="vimeo-video" src="http://player.vimeo.com/video/57175742"></iframe>
                         </div>
-                    </div><!--modal body-->
-                </div><!--modal content-->
-            </div><!--modal dialog-->
+                    </div><-modal body->
+                </div><-modal content->
+            </div><-modal dialog->
         </div>
-        <!--end the modal of video-->
+end the modal of video-->
 
         <!--back to top-->
         <a href="#" class="scrollToTop"><i class="ion-android-arrow-dropup-circle"></i></a>
