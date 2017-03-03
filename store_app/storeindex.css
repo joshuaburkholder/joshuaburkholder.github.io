@@ -1,0 +1,40 @@
+body {
+  margin: auto;
+  background: blue;
+  width: 850px;
+  font-family: "Arial"
+}
+
+ul {
+    padding:0;
+}
+
+ul.gallery li {
+  display: inline-block;
+  opacity:1;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+label {
+  cursor: pointer;
+  color: #fff;
+  background: #5D6B74;
+  padding: 5px 19px;
+}
+
+input {
+  display: none;
+}
+
+img {
+  padding: 5px;
+  border: 1px solid #ccc;
+
+}
+/*Select Categorie*/  
+input#select-animals:checked ~ .gallery li:not(.animals-item), input#select-lightning:checked ~ .gallery li:not(.lightning-item), input#select-desert:checked ~ .gallery li:not(.desert-item) {
+  opacity: 0.1;
+}
