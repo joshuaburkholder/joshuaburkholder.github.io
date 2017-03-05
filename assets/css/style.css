@@ -1,4 +1,4 @@
-/*
+cbp/*
 
 Project      : xone - Creative One Page Parallax Template
 Version      : v1.2
@@ -100,13 +100,19 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5{
   letter-spacing: 0px;
   margin-top: 0px;
   font-family: "Dosis", sans-serif;
   color: #000;
   font-weight: 400;
+}
+
+h6{
+  color: #889;
+  letter-spacing: 0px;
+  margin-top: 0px;
+  text-align: center;
 }
 
 .border-width {
@@ -944,8 +950,8 @@ Pricing tables
 Portfolio styles
 */
 .work-header {
-  padding-top: 100px;
-  padding-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 60px;
   background: #bfa67a;
 }
 .work-header .center-title {
@@ -1001,6 +1007,13 @@ Portfolio styles
   font-family: "Dosis", sans-serif;
   font-weight: 400;
   letter-spacing: 4px;
+}
+
+.cbp-l-grid-work-expl {
+  font-family: "Dosis", sans-serif;
+  font-weight: 300;
+  letter-spacing: 4px;
+  justify-content: center;
 }
 
 .cbp-l-grid-work .cbp-item-wrapper {
