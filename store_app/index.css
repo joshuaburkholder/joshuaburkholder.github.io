@@ -1,68 +1,389 @@
+/*Time for the CSS*/
+* {
+  margin: 0; 
+  padding: 0;
+}
+
 body {
-   margin: 5px;
-   padding: 10px 5px 0px 5px;
-   background: #FFFFFF;
+  background: #66C4E8;
+  font-family: arial;
+  width: 1000px;
+  border: 5px black;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
-.css-selector {
-font-family: 'Fira Sans Extra Condensed', sans-serif;
+.wrapper {
+  background: #ccc;
+  width: 100%;
+  margin-bottom:  
 }
 
-a {
-  text-decoration:none;
+main{
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-ul {
-      display: inline;
-      text-align: center;
+.container {
+  max-width: 800px;
 }
 
-li {
+.italic {
+  font-style: italic;
+}
+
+/*******************************INTRO BAR*************************************/
+#specialMessage {
+  text-align: right;
+  background-color: #FEE030;
+  font-size: 11px;
+  color:  white;
+  font-weight: bold;
+}
+
+/************************HEADER & NAV DIV******************************/
+#header {
+  position:relative;
+  margin:0;
+  }
+
+#innerTable {
+    background-color: black;
+    position: relative;
+    height: 180px;
+    box-shadow: 0 20px 50px -5px rgba(0, 0, 0, 0.75);
+}
+
+/************************NAV MENU TABS (POSITIONING) ******************************/
+
+#middle {
+  max-width: 850px;
+  margin-bottom: 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+#right {
+  float:  right;
+  margin-right: 5vw;
+  margin-bottom: 0px;
+}
+
+#left {
   float: left;
-  padding: 5px;
-  align-items: center;
+  margin-bottom: 0px;
 }
+
+
+/**********************************DROPDOWN MENU***********************************/
+/* Dropdown Button */
+.dropbtn {
+    background-color: #0094F5;
+    color: white;
+/*    padding: 16px;*/
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border-radius:  10px 10px 0px 0px;
+    box-shadow: 0 20px 50px 5px rgba(0, 0, 0, 0.75);
+}
+/*.dropbtn3 {
+    background-color: #0094F5;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 300px !important;
+    height: 45px;
+    border-radius:  10px 10px 0px 0px;
+}
+*/
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin:  14px 5px 0px 5px;
+    padding: 7px 7px 0px 7px;
+    bottom: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #66C4E8;
+    width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius:  10px 10px 10px 10px;
+    box-shadow: 0 20px 50px -5px rgba(0, 0, 0, 0.75);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    align-content: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    bottom: 100%
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #66C4E8;
+}
+
+.dropup-img {
+  max-width: 100px;
+  max-height: 50px;
+}
+
+/**********************Dropdown 2***************/
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+    margin:  14px 5px 0px 5px;
+    padding: 7px 7px 0px 7px;
+    bottom: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown2-content {
+    display: none;
+    position: absolute;
+    padding: 10px 10px 10px 10px;
+    background-color: #66C4E8;
+    width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius:  10px 10px 10px 10px;
+    color: black;
+    text-align: left;
+    box-shadow: 0 20px 50px -5px rgba(0, 0, 0, 0.75);
+}
+
+/* Links inside the dropdown2 */
+.dropdown2-content a {
+    color: white;
+    padding: 12px 12px 12px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown2 links on hover */
+.dropdown2-content a:hover {
+  background-color: #f1f1f1;
+  border-radius: 10px 10px 10px 10px; 
+  color: #66C4E8;  
+}
+
+/* Show the dropdown2 menu on hover */
+.dropdown2:hover .dropdown2-content {
+    display: block;
+    bottom: 100%
+}
+
+/* Change the background color of the dropdown2 button when the dropdown2 content is shown */
+.dropdown2:hover .dropbtn {
+    background-color: #66C4E8;
+}
+
+/***********************************************/
+
+/*************************************image display as slider/gallery*******************/
+
+.slider{
+  width: 324px; /*Same as width of the large image*/
+  position: relative;
+  /*Instead of height we will use padding*/
+  padding-top: 361px; /*That helps bring the labels down*/
+  margin: 20vh;
+  margin-left: 55%;
+  
+  /*Adds shadow*/
+  box-shadow: 0 20px 50px -5px rgba(0, 0, 0, 0.75);
+}
+
+
+/*Last thing remaining is to add transitions*/
+.slider>img{
+  position: absolute;
+  left: 0; top: 0;
+  transition: all 0.5s;
+}
+
+.slider input[name='slide_switch'] {
+  display: none;
+}
+
+/*This provides spacing around the thumbnails*/
+.slider label {
+  margin: 18px 0 0 18px;
+  border: 3px solid #999;
+  
+  float: left;
+  cursor: pointer;
+  transition: all 0.5s;
+  
+  /*Default style = low opacity*/
+  opacity: 0.6;
+}
+
+.slider label img{
+  display: block;
+}
+
+/*Time to add the click effects*/
+.slider input[name='slide_switch']:checked+label {
+  border-color: #666;
+  opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*Time to work on the main images*/
+.slider input[name='slide_switch'] ~ img {
+  opacity: 0;
+  transform: scale(1.1);
+}
+/*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name='slide_switch']:checked+label+img {
+  opacity: 1;
+  transform: scale(1);
+}
+/*Clicking on any thumbnail now should activate the image related to it*/
+
+/*We are done :)*/
+
+/******************************************SIDEBAR*******************************/
+
+.sidebar {
+  height: 445px;
+  width: 345px;
+/*  border: 1px solid black;*/
+  float: left;
+  margin: -600px 5px 5px 5vw;
+ /* box-shadow: 0 20px 50px -5px rgba(0, 0, 0, 0.75);*/
+}
+
+.logo-box{
+  height: 145px;
+  widows: 335;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+/*  border: 3px solid yellow;*/
+}
+
+.logo {
+  max-width: 300px;
+}
+
+.about-box{
+  background-color: white;
+  height: 335px;
+  widows: 335;
+  margin: -35px 15px 25px 15px;
+  padding: 5px 5px 5px 5px;
+/*  border: 3px solid yellow;*/
+  box-shadow: 0 20px 50px -5px rgba(0, 0, 0, 0.75);
+
+}
+
+.detail-box{
+  height: 70px;
+  widows: 335;
+  padding: 5px 5px 5px 5px;
+  color: white;
+/*  border: 3px solid yellow;
+  box-shadow: 0 20px 50px -5px rgba(0, 0, 0, 0.75);*/
+}
+
+.detail-box a:link {
+  text-decoration: none;
+}
+
+.detail-box a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+
+.textimg {
+  max-height: 100px;
+  margin-left: 5px;
+  margin-top: -10px;
+}
+
+/*.button3 {
+  width: 200px;
+  height: 50px;
+  padding: 3px 3px 3px 3px;
+  background-color: blue;
+  text-align: center;
+  border-radius: 25px;
+  float: right;
+  margin: -75px 20px 5px -10px;
+  box-shadow: 0 20px 50px -5px rgba(0, 0, 0, 0.75);  
+}*/
+
+.button3 {
+    background-color: #0094F5;
+    color: white;
+/*    padding: 16px;*/
+    font-size: 23px;
+    margin-top: -65px;
+    margin-left: 100px;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-radius:  10px 10px 10px 10px;
+    box-shadow: 0 20px 50px -5px rgba(0, 0, 0, 0.75);
+}
+
+.button3 :hover{
+  background-color: white;
+  cursor: pointer;
+  height: 30px;
+  text-align: center;
+  border-radius:  10px 10px 10px 10px;
+  cursor: url('img/puffytail.png'), auto !important;  
+}
+
+.button3 a:hover {
+  background-color: #f1f1f1;
+  border-radius: 10px 10px 10px 10px; 
+  color: #66C4E8;
+}
+/****************************SEARCH BAR*************************************/
 
 .search {
-  width: 100%;
-  position: relative;
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 40px;
 }
 
-.searchForCat {
-  float: center;
-  width: 100%
-  border: 3px solid black;
-  padding: 3px;
-  height: 18px;
-  border-radius: 5px;
-  outline: none;
-  color: #0094F5;
-}
 
-.searchButton {
-  position: relative;
-  right: 0px;
-  width: 40px;
-  height: 36px;
-  border: 2px solid #00B4CC;
-  text-align: center;
-  color: #000;
-  border-radius: 5px;
-  border-color: #000;
-  cursor: pointer;
-  font-size: 15px;
-}
+/******************************************FOOTER*******************************/
 
-.titleBox {
-  text-align: center;
-}
 .footer {
-  position: absolute;
-  display: block;
+  height: 70px;
   width: 100%;
-}
-
-#specialMessage {
   text-align: right;
   background-color: #FEE030;
   font-size: 11px;
@@ -70,91 +391,6 @@ li {
   font-weight: bold;
 }
 
-#header {
-  position:relative;
-  width: 90%;
-  margin:0
-  }
-
-#navcontainer {
-  width:  100%;
-  max-height: 100%;
-  background-color: #0094F5;
-  padding: 5px 15px 5px -15px ;
-}
-
-#innerTable {
-  display: table;
-  width: 99%;
-  text-align: center;
-  padding:  3px;
-  font-weight: bolder;
-  font-style: italic;
-}
-
-#innerTable li {
-  list-style-type: none;
-  font-size: 11px;
-  align-content: center;
-}
-
-#row {
-    display: table-row;
-  }
-
-  #left, #right, #middle {
-    display: table-cell;
-    align-content: bottom;
-    max-height: 30vh;
-    min-height: 15vh;
-    }
-
-#left {
-  float: left;
-  width: 28vw;
-  text-align: center;
-  margin-left: 5px;
-  padding-top: 25px;
-}
 
 
-#middle {
-  max-width: 40vw;
-  height: auto;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-#logo {
-  max-height: 100px;
-  width: auto;
-}
-
-#right {
-  float: right;
-  width: 28vw;
-  padding-top: 25px;
-}
-
-.box {
-  display: inline-flex;
-  margin: 8px 8px 8px 8px;
-  background-color: #0094F5;
-  color:aliceblue;
-}
-
-.boxInner img {
-   width: 100%;
-}
-
-
-.footer {
-  background-color: #D3D3D3;
-}
-
-#socialLink {
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-}
 
