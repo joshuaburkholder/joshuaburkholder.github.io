@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript/CSS Clock</title>
+	<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+
+<div class="wrapper">
+<div class="slider">
+
+<!-- <div class="clock">
+	<div class="clockface"> -->
+		<div class="hrHand"></div>
+		<div class="minHand"></div>
+		<div class="secHand"></div>
+<!-- 	</div>
+</div>
+ -->
+<!--IMG 1-->
+  <input type="radio" name="slide_switch" id="id1"/>
+  <label for="id1">
+    <img src="./img/noNumbers.png" width="70"/>
+  </label>
+  <img src="./img/noNumbers.png"/>
+  
+<!--IMG 2: Default image on page load-->
+  <input type="radio" name="slide_switch" id="id2" checked="checked"/>
+  <label for="id2">
+    <img src="./img/numbers.png" width="70"/>
+  </label>
+  <img src="./img/numbers.png"/>
+
+<!--IMG 3-->  
+  <input type="radio" name="slide_switch" id="id3"/>
+  <label for="id3">
+    <img src="./img/roman.png" width="70"/>
+  </label>
+  <img src="./img/roman.png"/>
+
+  <h1 class="month"</h1>
+
+</div><!--ends slider div-->
+
+
+</div>
+
+<script>
+  const secondHand = document.querySelector('.secHand');
+  const minsHand = document.querySelector('.minHand');
+  const hourHand = document.querySelector('.hrHand');
+
+  function setDate() {
+    const now = new Date();
+
+    const seconds = now.getSeconds();
+    const secondsDegrees = ((seconds / 60) * 360) + 90;
+    secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+    const mins = now.getMinutes();
+    const minsDegrees = ((mins / 60) * 360) + ((seconds/60)*6) + 90;
+    minsHand.style.transform = `rotate(${minsDegrees}deg)`;
+
+    const hour = now.getHours();
+    const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
+    hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+  }
+
+  setInterval(setDate, 1000);
+
+  setDate();
+
+</script>
+</body>
+</html>

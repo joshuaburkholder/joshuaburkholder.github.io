@@ -1,0 +1,138 @@
+html {
+  background: url(https://media.giphy.com/media/26tnnkLYVvfF1W3HG/giphy.gif);
+  background-size: cover;
+  font-family:'helvetica neue';
+  text-align: center;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  display:flex;
+  flex:1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.wrapper{
+  min-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  border:20px solid white;
+  border-radius:50%;
+  margin:50px auto;
+  position: relative;
+  padding:2rem;
+  box-shadow:
+    0 0 0 4px rgba(0,0,0,0.1),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0,0,0,0.2);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.secHand {
+  width: 30%;
+  height: 3px;
+  background: #C5FF00;
+  position: absolute;
+  top: 50%;
+  margin-top: -151px;
+  margin-left: 60px;
+  z-index: 1;
+  transform-origin: 100%;
+}
+
+.hrHand {
+    width:20%;
+    height:3px;
+    background: black;
+    position: absolute;
+    top:50%;
+    margin-top: -151px;
+    margin-left: 90px;
+    z-index: 1;
+    transform-origin: 100%;
+}
+
+.minHand {
+  width:30%;
+  height:3px;
+  background:black;
+  position: absolute;
+  top:50%;
+  margin-top: -151px;
+  margin-left: 60px;
+  z-index: 1;
+  transform-origin: 100%;
+}
+
+
+.slider{
+
+  background: rgba(250, 250, 250, .3);
+  width: 300px; /*Same as width of the large image*/
+  height: 300px;
+  position: relative;
+  /*Instead of height we will use padding*/
+  padding-top: 300px; /*That helps bring the labels down*/
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid white;
+/*  box-shadow: 0 20px 50px -5px rgba(0, 0, 0, 0.75);*/
+}
+
+
+.slider > img {
+  position: absolute;
+  left: 0; top: 0;
+  transition: all 0.5s;
+}
+
+.slider input[name='slide_switch'] {
+  display: none;
+}
+
+.slider label {
+  margin: 18px 0 0 18px;
+  border: 3px solid gray;
+  
+  float: left;
+  cursor: pointer;
+  transition: all 0.5s;
+  
+  opacity: 0.6;
+}
+
+.slider label img{
+  display: block;
+}
+
+
+.slider input[name='slide_switch']:checked+label {
+  border-color: #C5FF00;
+  opacity: 1;
+}
+
+.slider input[name='slide_switch'] ~ img {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.slider input[name='slide_switch']:checked+label+img {
+  opacity: 1;
+  transform: scale(1);
+}
+
