@@ -1,0 +1,183 @@
+/*create background for app*/
+
+html {
+  font-size: 14px;
+  background: url(./img/writingbackdrop.jpg);
+  background-size: cover;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
+
+}
+
+a:link, :visited {
+	text-decoration: none;
+	color: white;
+}
+
+/*create styles for elements*/
+
+h1 {
+	font-size: 48px;
+	color: white;
+}
+
+#titleline {
+	margin-left: 5vw;
+	margin-top: -40px;
+}
+
+h2 {
+	color: #3a3a3b;
+}
+
+
+h3 {
+	position: absolute;
+	color: white;
+}
+
+#byline {
+	margin-top: -40px;
+}
+
+kbd {
+	font-size: 30px;
+	font-family: arial;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+/*create styles for classes*/
+
+.header {
+	margin-top: -15vh;
+	background: #739BD6;
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	z-index: 1;
+	border: 3px solid lightblue;
+	margin-left: -5px;
+	margin-right: -15px;
+    margin-bottom: 20px;
+}
+
+.keys {
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	margin-bottom: 10px;
+	padding-top: 40px;
+}
+
+.key {
+
+	width: 94px;
+	height: 80px;
+	border: 3px solid lightblue;
+	background: #739BD6;
+	border-radius: 20px;
+	padding: 2% 2% 0% 2%;
+	float: left;
+	margin: 7px;
+	text-align: center;
+	position: relative;
+	color: white;
+}
+
+.playing {
+  transform: scale(1);
+  border-color: black;
+/*  box-shadow: 3px 3px 2px #2e3e55;*/
+  z-index: 500;
+  background: rgba(56, 97, 140, 0.8);
+
+    -webkit-transition-property: width height background-color font-size left top transform 
+    -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-property: width height background-color font-size left top transform 
+    -webkit-transform color;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+
+.sound {
+	font-size: 15px;
+}
+
+/************************ Modal ********************************
+*/
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(56, 97, 140, 0.8);
+    z-index: 100;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 60px auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 10px 10px 5px #2e3e55;
+}
+
+.modalDialog > div > h2 {
+	color: #739BD6;
+	font-size: 30px;
+}
+
+.modalDialog > div > p {
+	font-size: 20px;
+}
+
+.close {
+    background: #3a3a3b;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #FF5964;
+}
+
+#modalLink {
+    text-decoration: underline;;
+    color: darkblue;
+}
