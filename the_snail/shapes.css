@@ -1,0 +1,136 @@
+
+:root {
+  --base: #FFFFFF;
+  --color-b: #F58B2B;
+  --color-c: #F58B2B;
+  --color-e: #AF3D95;
+  --color-g: #000000;
+  --color-h: #008E63;
+  --color-i: #49A1B5;
+  --color-j: #F36F21;
+  --color-k: #D9363B;
+  --color-l: #F9AC3A;
+  --color-m: #0068B2;
+  --color-n: #6CBF65;
+  --color-o: #B77FAF;
+
+
+  --stroke-width-b: 3;
+  --stroke-width-c: 3;
+  --stroke-width-e: 3;
+  --stroke-width-g: 3;
+  --stroke-width-h: 3;
+  --stroke-width-i: 3;
+  --stroke-width-j: 3;
+  --stroke-width-k: 3;
+  --stroke-width-l: 3;
+  --stroke-width-m: 3;
+  --stroke-width-n: 3;
+  --stroke-width-o: 3;
+}
+
+.hl {
+  color: black;
+}
+
+/*
+  misc styles, nothing to do with CSS variables
+*/
+
+body {
+  text-align: center;
+}
+
+body {
+  background: #FFFFFF;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+}
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header{
+	background: #000000;
+	height: 75px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo{
+	background: url(./metisse2.png);
+	height: 75px;
+	width: 250px;
+	float: left;
+}
+
+.about{
+	background: #000000;
+	height: 75px;
+	width: 250px;
+	float: right;
+}
+
+.controls {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 175px;
+  height: auto;
+  position: absolute;
+  padding: 20px;
+  text-align: left;
+  margin-top: -200px;
+  margin: 15px;
+  z-index: 1;
+}
+
+.title{
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+input {
+  width:100px;
+}
+
+h2 {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+h5 {
+	margin-top: 2px;
+	margin-bottom: 7px;
+}
+
+p {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+svg {
+	margin-top: 15px !important;
+}
+
+.a{isolation:isolate; margin: 50px;}
+
+
+.b{fill:var(--color-b);stroke-width:var(--stroke-width-b);stroke:var(--color-b);}
+.c{fill:var(--color-c);stroke-width:var(--stroke-width-c);stroke:var(--color-c);}
+.d{fill:var(--base);}
+.e{fill:var(--color-e);stroke-width:var(--stroke-width-e);stroke:var(--color-e);}
+.f{fill:rgba(0,0,0,0);stroke-width:3;stroke:rgba(0,0,0,0);}
+
+.g{fill:var(--color-g);stroke-width:var(--stroke-width-g);stroke:var(--color-g);}
+.h{fill:var(--color-h);stroke-width:var(--stroke-width-h);stroke:var(--color-h);}
+.i{fill:var(--color-i);stroke-width:var(--stroke-width-i);stroke:var(--color-i);}
+.j{fill:var(--color-j);stroke-width:var(--stroke-width-j);stroke:var(--color-j);}
+.k{fill:var(--color-k);stroke-width:var(--stroke-width-k);stroke:var(--color-k);}
+.l{fill:var(--color-l);stroke-width:var(--stroke-width-l);stroke:var(--color-l);}
+.m{fill:var(--color-m);stroke-width:var(--stroke-width-m);stroke:var(--color-m);}
+.n{fill:var(--color-n);stroke-width:var(--stroke-width-n);stroke:var(--color-n);}
+.o{fill:var(--color-o);stroke-width:var(--stroke-width-o);stroke:var(--color-o);}

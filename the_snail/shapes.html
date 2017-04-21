@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>shapes</title>
+
+<link rel="stylesheet" type="text/css" href="./shapes.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="header">
+		<div class="logo"></div>
+		<div class="about">
+			<a href="http://www.henrimatisse.org/the-snail.jsp" target="_blank"><img src="./matisee_img.jpg" height="75px"> </a>
+		</div>
+	</div>
+
+  <div class="title"><h2>The Snail</h2></div>
+  
+  <div class="controls">
+
+ 	 <h5>Create your own version of this Matisse masterpiece by changing the colors and sizes of the cut outs below.</h5>
+    	
+    	<label for="base">Base:</label>
+    	<input id="base" type="color" name="base" value="#ffffff">
+   
+
+		<!-- <p>Top: 
+		    <input id="color-b" type="color" name="color-b" value="#F58B2B">
+		    <input id="stroke-width-b" type="range" name="stroke-width-b" min="0" max="100" value="3" data-sizing="px"></p>
+	
+		<p>Bottom
+		    <input id="color-c" type="color" name="color-c" value="#F58B2B">
+		    <input id="stroke-width-c" type="range" name="stroke-width-c" min="0" max="100" value="3" data-sizing="px"></p> -->
+
+		<p>###
+		    <input id="color-e" type="color" name="color-e" value="#AF3D95">
+		    <input id="stroke-width-e" type="range" name="stroke-width-e" min="0" max="100" value="3" data-sizing="px"></p>
+
+		<p>###
+		    <input id="color-g" type="color" name="color-g" value="#000000">
+		    <input id="stroke-width-g" type="range" name="stroke-width-g" min="0" max="100" value="3" data-sizing="px"></p>
+
+		<p>###
+		    <input id="color-h" type="color" name="color-h" value="#008E63">
+		    <input id="stroke-width-h" type="range" name="stroke-width-h" min="0" max="100" value="3" data-sizing="px"></p>
+
+		<p>###
+		    <input id="color-i" type="color" name="color-i" value="#49A1B5">
+		    <input id="stroke-width-i" type="range" name="stroke-width-i" min="0" max="100" value="3" data-sizing="px"></p>
+
+		<p>###
+		    <input id="color-j" type="color" name="color-j" value="#F36F21">
+		    <input id="stroke-width-j" type="range" name="stroke-width-j" min="0" max="100" value="3" data-sizing="px"></p>
+
+		<p>###
+		    <input id="color-k" type="color" name="color-k" value="#D9363B">
+		    <input id="stroke-width-k" type="range" name="stroke-width-k" min="0" max="100" value="3" data-sizing="px"></p>
+
+		<p>###
+		    <input id="color-l" type="color" name="color-l" value="#F9AC3A">
+		    <input id="stroke-width-l" type="range" name="stroke-width-l" min="0" max="100" value="3" data-sizing="px"></p>
+
+		<p>###
+		    <input id="color-m" type="color" name="color-m" value="#0068B2">
+		    <input id="stroke-width-m" type="range" name="stroke-width-m" min="0" max="100" value="3" data-sizing="px"></p>
+
+		<p>###
+		    <input id="color-n" type="color" name="color-n" value="#6CBF65">
+		    <input id="stroke-width-n" type="range" name="stroke-width-n" min="0" max="100" value="3" data-sizing="px"></p>
+
+		<p>###
+		    <input id="color-o" type="color" name="color-o" value="#B77FAF">
+		    <input id="stroke-width-o" type="range" name="stroke-width-o" min="0" max="100" value="3" data-sizing="px"></p>
+
+  </div>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" class="a">
+
+<path d="M256.8 385.8L319.5 381.7 320.9 88.5 421.8 84.4 498.2 87.1 585.5 84.4 635.9 84.4 697.3 83 736.8 77.6 779.1 77.6 871.8 91.2 960.5 77.6 955 203 987.7 212.6 975.5 268.5 976.8 291.7 979.5 313.5 975.5 335.3 970 361.2 967.3 389.8 1021.8 395.3 1023.2 14.8 781.8 16.2 773.6 28.5 255.5 18.9 256.8 385.8Z" class="b"/>
+
+<path d="M383.6 387.1L376.8 417.1 368.6 443 367.3 466.2 367.3 490.8 363.2 509.8Q364.5 503 361.8 524.8 359.1 546.7 349.5 557.6L346.8 586.2 349.5 617.6 345.5 631.2 345.5 658.5 335.9 676.2 340 689.8 333.2 707.6 326.4 723.9 435.5 770.3 436.8 752.6 496.8 753.9 502.3 734.8 897.7 737.6 925 586.2 941.4 531.7 948.2 467.6 964.5 374.8 1024.5 377.6 1027.3 782.6 259.5 789.4 258.2 387.1 383.6 387.1Z" class="c"/>
+
+<path d="M837.5 176L837.5 190.2 1001 217.8 973.8 379.5 958.7 376.9 913.4 686.8 837.5 675.7 837.5 743.9 511.8 743.9 511.8 628 493.4 625.4 493.4 749.9 493.4 757.9 433.5 757.9Q435.1 770.4 428.9 771.9 423.9 773.1 387.2 757.9L379.9 757.9 379.9 754.9Q359.3 746.1 330 732.9L336 707.9 344 611.9 344 581.9 344 552.9 355 525.9 366 496.9 366 459.9 379.9 390 318 390 318 226 511.8 226 511.8 176 577.7 176 577.7 82 837.5 82 837.5 176Z" class="d"/>
+
+<path d="M572 315L535.9 196 343 254.5 379.1 373.5 414 460 447 447 465 433 482 421 493.5 409 511.9 390 521.9 379.5 535.9 368.3 546.9 348 555.9 337.7 563.9 321 572 315Z" class="e"/><rect x="238.4" width="803.2" height="800" transform="matrix(1 0 0 1 0 0)" class="f"/>
+
+<path d="M620 82L641 104 656 119 676 135Q678.7 138.7 693 150 707.3 161.3 726 170L736 181 749 189 753.2 196 773 201 695 311 536 201 620 82Z" class="g"/>
+
+<path d="M749 88L966 72 970 307 938 300 890 291 860 281 767 249 758 249 749 88Z" class="h"/><path d="M570 315L578 311 648 298 667 295 701 295 739 452 731 456 719 452 712 456 703 452 684 447 648 440 638 438 607 438 590 433 580 433 574 431Q565.7 433 564 431C562.3 429 558 427.2 556 427Q554 426.8 545 427L536 427 522 427 516 398 529 390 542 386 536 383 542 373.5 547 368.3 551 357 556 348 562 337.7 567 324 570 315Z" class="i"/>
+
+<path d="M615.1 463.5L630.1 463.5 640.1 463.5 655.2 463.5 666.2 463.5 675.2 459.5 683.3 459.5 702.3 455.5 690.3 587.2 686.3 607.1 669.2 623.1 624.1 631Q593.9 635 594 631 594.1 627.1 615.1 463.5ZM878.8 259L938 303.9 925 320.8 908.9 337.5 900.9 347.8 889.9 358.7 882.8 373.2 872.8 385.7 859.8 399.6 848.7 416.6 797.6 379.2 825.7 342.8 837.7 327.8 848.7 303.9 865.8 280.9 878.8 259Z" class="j"/>
+
+<path d="M687 433L731 417 753.2 405 767 400 782 390 802 379.5 811.8 396.2 819.1 404.1 826.9 413.4Q833.2 421.8 835.8 422.8 838.4 423.8 845.1 433.2 852.4 440.5 855 442.1 857.6 443.6 872.2 458.7L882.1 466 891 473.3 900.9 480.6 912.3 490 921.7 499.4 933.2 507.7 946.7 516 949.3 518.1 936.3 525.4 926.4 531.7 914.9 538.9 907.1 538.9 901.4 541.6 886.3 549.4Q876.4 555.1 873.8 556.1 871.2 557.2 861.8 560.3L861.8 564.5 796.7 597.8 780.6 608.2 780 609.3 687 433Z" class="k"/>
+
+<path d="M420.9 513.2L511.9 386.6 622.1 466.6 532.2 592.6 420.9 513.2Z" class="l"/>
+
+<path d="M349 587.4L399.4 589 412.6 589 433.4 589 466.3 590.6 531.5 591.7 592.3 591.7 602.2 593.4 637.3 593.9 752.9 596.1 747.4 755 343 745.2 349 587.4Z" class="m"/>
+
+<path d="M949.3 593.7L749.3 553 758.9 583.2 763 603.3 769.4 627.5 773.1 653.1 776.7 675.9 780.4 709.7 783.6 738.9 782.2 746.7 918.7 769.5 949.3 593.7Z" class="n"/>
+
+<path d="M317.6 79.6L339 80.7 351 80.7 356.5 76.3 360.4 76.3 365.3 81.8 367.5 86.2 374.1 79.6 376.8 87.8 470.5 87.3 507.8 87.8 581.2 86.2 580.7 175.5 512.7 175.5 511.1 232.5 316.5 230.3 317.6 79.6Z" class="o"/>
+
+</svg>
+
+<div class="header"></div>
+</div>
+
+  <script>
+    const inputs = document.querySelectorAll('.controls input');
+
+    function handleUpdate() {
+      const suffix = this.dataset.sizing || '';
+      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    }
+
+    inputs.forEach(input => input.addEventListener('change', handleUpdate));
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+  </script>
+
+
+</body>
+</html>
