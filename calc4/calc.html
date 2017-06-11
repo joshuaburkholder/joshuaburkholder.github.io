@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media Mail Generator</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="./assets/smallstyle.css" />
+
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="header"></div>
+
+<div class="form-style">
+	<h1>Media Mail Calculator</h1>
+	
+	<form name="mediamail">
+		<div class="inner-wrap">
+		<table cols="2">
+		  <tbody>
+		  	<tr><td>
+		  			<span><h4>Title:</h4>
+		  			<input type="text" name="title" placeholder="Enter the title of your book"></span>
+		  		</td></tr>
+		  	<tr><td>
+		  			<h4>Number of Pages:</h4>
+		  			<input type="number" name="pageCount" placeholder="# of pages">
+		  		</td></tr>
+		  	<tr><td>
+		  			<h4>Cover:</h4>
+		  		<div class="radio-group1">		
+		  			
+					<input type="radio" id="option2" name="cover" value="p">
+		  			<label for="option2">Paperback</label>
+		  			<input type="radio" id="option1" name="cover" value="h">
+		  			<label for="option1">Hard Cover</label>
+
+		  			<br>
+		  		</td></tr>
+		  		</div>	
+		   	<tr><td>
+		  			<h4>Trim Size:</h4>
+		  		<div class="radio-group2">
+		  			<input type="radio" id="optionA" name="size" value="0">
+		  			<label for="optionA"><br>4&frac14;" x 7"</label><br>
+		  			<input type="radio" name="size" id="optionB" value="1">
+		  			<label for="optionB"><br> 5&frac12;" x 8&frac12;" <br>to 6" x 9"</label><br>
+		  			<input type="radio" name="size" id="optionC" value="2">
+		  			<label for="optionC"><br>8" x 10" to<br> 8&frac12;" x 11"</label><br>
+	
+		  		</div>
+		  		</td></tr>
+
+		  	<tr>
+		  		<td><br><br>
+		  			<input id="submit" type="button" name="submit" value="Calculate" onclick="calculate()">
+		  		</td>
+		  	</tr>
+		  </tbody>
+		</table>
+		<div id="result">
+			<p id="p1"></p>
+			<p id="s1"></p>
+		</div>
+	  </div>
+	</form>
+</div>
+</div>
+
+<script type="text/javascript" src="./calculate.js"></script>
+
+</body>
+</html>
