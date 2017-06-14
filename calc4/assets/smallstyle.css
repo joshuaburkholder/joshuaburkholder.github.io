@@ -1,17 +1,8 @@
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
+html, body, div, span, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+table, tbody, tr, th, td,
+article, aside, canvas, footer, header, section, {
   margin: 0;
   padding: 0;
   border: 0;
@@ -21,7 +12,6 @@ time, mark, audio, video {
 }
 
 body{
-/*  background-color: #001122;*/
   background-color: #000000;
 }
 
@@ -147,12 +137,6 @@ table{
     -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
 }
 
-/*.form-style .section{
-    font: normal 90px 'Bitter', serif;
-    color: red;
-    margin-bottom: 5px;
-}*/
-
 .form-style input[type="button"], 
 .form-style input[type="submit"]{
   margin-left: auto;
@@ -259,18 +243,6 @@ table{
   border: 2px solid #2a88ad;
   border-radius: 8px;
   float: left;
-
-/*  display: inline-block;
-  cursor: pointer;
-  font-weight: bold;
-  color: #2A88AD;
-  font-size: 30px !important;
-  padding: 5px;
-  width: 130px;
-  height: 130px;
-  float: left;
-  background-color: #FFFFFF;
-  border: 2px #2A88AD;*/
 }
 
 .radio-group2 input[type=radio]:checked + label{
